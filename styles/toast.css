@@ -1,0 +1,60 @@
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spaces out multiple toasts if they appear at once */
+  z-index: 9999;
+}
+
+
+/* 2. Individual Toast styling */
+.toast {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.5rem;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  
+  /* Slide-in animation on creation */
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+
+.toast.success { background-color: #3cb640; }
+.toast.error   { background-color: #F44336; }
+
+
+/* 3. Smooth slide-out class added right before destruction */
+.toast.hide {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+/* --- Animations --- */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

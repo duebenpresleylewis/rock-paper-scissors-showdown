@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/toast.css">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Rock Paper Scissors</title>
+
+    <!-- Importing font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Tint&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Imperial+Script&family=Love+Light&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&family=Stack+Sans+Notch:wght@200..700&family=Syne+Mono&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+     <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+
+
+  </head>
+  <body>
+    <header class="header-container">
+      <h1 id="title">Minute Games</h1>
+
+      <nav class="nav-container">
+        <ul>
+          <li><a href="#home-id" class="navigation-anchor">Home</a></li>
+          <li><a href="../pages/contact.html" class="navigation-anchor">Contact Us</a></li>
+          <li><a href="../pages/about.html" class="navigation-anchor">About Us</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main-container">
+      <div class="main-heading-container" id="home-id">
+        <h1>Rock Paper Scissors Game</h1>
+      </div>
+
+      <div class="player-move-prompt">
+        <p>Choose your move:</p>
+      </div>
+
+      <div class="moves-container">
+        <div class="rock-button">
+          <button tabindex="0" onclick="playGame('rock')" class="action-button">
+            Rock
+          </button>
+        </div>
+
+        <div class="paper-button">
+          <button
+            tabindex="1"
+            onclick="playGame('paper')"
+            class="action-button"
+          >
+            Paper
+          </button>
+        </div>
+
+        <div class="scissor-button">
+          <button
+            tabindex="2"
+            onclick="playGame('scissors')"
+            class="action-button"
+          >
+            Scissors
+          </button>
+        </div>
+      </div>
+
+      <div class="display-result-container">
+        <p class="js-result-display"></p>
+        <p class="moves"></p>
+
+        <p class="js-score"></p>
+      </div>
+
+      <div class="reset-button-container">
+        <button class="reset-button" tabindex="3" onclick="resetScore()" >
+          Reset Score
+        </button>
+      </div>
+
+      <div id="toast-container"></div>
+    </main>
+
+    <script src="script.js"  type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </body>
+</html>

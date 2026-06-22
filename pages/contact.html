@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+
+    <!-- icons -->
+        <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Tint&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Imperial+Script&family=Love+Light&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&family=Stack+Sans+Notch:wght@200..700&family=Syne+Mono&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+      <!-- favicon -->
+       <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+       
+</head>
+<body>
+    <div class="container appear-animation">
+        <div class="top-container">
+            <h1 id="heading" class="appear-animation">Let's Build Something Together</h1>
+            <p id="title-description" class="appear-animation">Whether you have a project in mind, an internship opportunity, or simply want to connect, feel free to reach out.</p>
+        </div>
+
+
+        <div class="contact-container">
+            <ul class="appear-animation">
+                <li><a href="mailto:dubenlewis@gmail.com"><i class="fas fa-envelope"></i></a></li>
+
+                <li><a href="https://twitter.com/duebenlewis" target="_blank"><i class="fab fa-twitter"></i></a></li>
+
+                <li><a href="https://github.com/duebenpresleylewis" target="_blank"><i class="fab fa-github"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/duebenpresleylewis/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+
+            <form action="">
+                <div class="form-items">
+
+                    <div class="form-group appear-animation">
+                        <label for="user-name">Your Name</label>
+                        <input type="text" id="user-name" placeholder="Name"
+                        required>
+                    </div>
+
+                    <div class="form-group appear-animation">
+                        <label for="user-email">Your Email</label>
+                        <input type="email" id="user-email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group appear-animation">
+                        <label for="user-message">Your Message</label>
+                        <textarea id="user-message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="appear-animation">Send Message</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="home-container">
+            <button class="home-link">Continue Playing</button>
+        </div>
+
+    </div>
+
+    <script src="../scripts/emailValidation.js"></script>
+    <script src="../scripts/email.js"></script>
+</body>
+</html>
