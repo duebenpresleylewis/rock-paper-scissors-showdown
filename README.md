@@ -1,6 +1,9 @@
-# Rock Paper Scissor
+# Rock Paper Scissor Showdown
 
 A small browser-based Rock-Paper-Scissors game with a simple contact page and lightweight utilities.
+
+🎮 Live Demo:
+https://duebenpresleylewis.github.io/rock-paper-scissors-showdown/
 
 ## Features
 - Play a single-round Rock-Paper-Scissors game against the computer
