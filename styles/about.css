@@ -12,6 +12,7 @@ body {
     align-items: center;
     background-color: #001219;
     flex-direction: column;
+    min-width: 250px;
 }
 
 .container {
@@ -24,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 1rem;
 }
 
 h1 {
@@ -63,4 +65,17 @@ p {
 .home-link:hover {
     background-color: #000000;
     box-shadow:0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.appear-animation {
+    animation: fadeIn 1.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

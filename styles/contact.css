@@ -9,12 +9,13 @@
 body {
     background-color: #e0aaff;
     font-family: Arial, sans-serif;
+    min-width:250px;
 }
 
 .container {
     width: 80%;
     margin: 50px auto;
-    padding:10%;
+    padding:5%;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 1rem;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -37,22 +38,8 @@ body {
 
 }
 
-ul {
-    width: 100%;
-    display: flex;
-    gap:6rem;
-    justify-content: center;
-    align-items: center;
-    
-}
-.fab , .fas{
-    /* color:#8a17ad; */
-    color:#fff;
-    font-size: 2rem;
-    animation:colorSwitch 3s ease-in-out infinite;
-    transition: animation 1s ease;
-    
-}
+
+
 
 .contact-container {
     width: 100%;
@@ -97,7 +84,7 @@ form {
 }
 
 .form-group label {
-    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 1rem, 1.2rem);
     color: #333;
     font-family: 'oxanium', sans-serif;
 }
@@ -120,7 +107,7 @@ form {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 1rem, 1.2rem);
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top:5vh;
@@ -149,7 +136,7 @@ form {
     border: none;
     border-radius: 1.5rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 1rem, 1.2rem);
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease 100ms;
     font-weight: 700;
@@ -196,6 +183,24 @@ form {
 }
 
 
+.nav-links {
+    width: 100%;
+    display: flex;
+    gap:6rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fab , .fas{
+    /* color:#8a17ad; */
+    color:#fff;
+    font-size: clamp(0.5rem,1.5rem, 2rem);
+    animation:colorSwitch 3s ease-in-out infinite;
+    transition: animation 1s ease;
+    
+}
+
+
 @media (hover:hover) {
     .fab:hover , .fas:hover{
         /* color:#ffffff; */
@@ -228,4 +233,61 @@ form {
     to {
         color:#630a7e;
     }
+}
+
+
+@media screen and (max-width: 730px) {
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    #title-description{
+        margin:4rem auto;
+    }
+}
+
+/* Prevent the fixed home button from overlapping the send/submit button on small viewports */
+@media screen and (max-width: 780px) {
+    .contact-container, .container {
+        padding-bottom: 10vh;
+    }
+    .home-container {
+        margin-top:1rem;
+        bottom: 20px; /* raise the home button above the submit button */
+        right: 16px;   /* give a little padding from the edge */
+        z-index: 50;
+    }
+
+    /* Make submit button span available width so layout is clearer */
+    #submit-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-items {
+        margin-top: 40px; /* reduce top margin for small screens */
+    }
+}
+
+/* Extra safety for very small phones where 600px rule may not suffice */
+@media screen and (max-width: 450px) {
+    #submit-btn{
+        padding: 10px 20px;
+        margin-top:2vh;
+    }
+    .home-container {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 24px; /* keep it near the bottom but centered */
+        width: auto;
+        z-index: 60;
+    }
+
+    .home-link {
+        display: inline-block;
+    }
+
 }

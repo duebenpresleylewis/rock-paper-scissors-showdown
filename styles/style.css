@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #ffd166;
   min-height:100vh;
+  min-width:250px;
   overflow-x: hidden;
 }
 
@@ -226,6 +227,9 @@ body {
 }
 
 
+.appear-animation {
+    animation: fadeIn 1s ease-in-out;
+}
 
 /* Mobile styles: show hamburger and hide horizontal menu */
 @media screen and (max-width: 729px) {
@@ -337,5 +341,14 @@ body {
     .navigation-anchor:active{
         color:rgb(146, 141, 141);
         transition: color 500ms ease 100ms;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
