@@ -9,7 +9,7 @@ function sendMail(event) {
     event.preventDefault();
 
     button.disabled = true;
-    button.textContent = "Sending...";
+    showToast("📨 Sending message...");
 
 
     const params = {
@@ -35,13 +35,15 @@ function sendMail(event) {
 
     .then(() => {
 
-        alert("✅ Message sent successfully!");
+        showToast("✅ Message sent successfully!");
+
+
 
         form.reset();
+        const textarea = document.getElementById("user-message");
+        textarea.style.height = "auto";
 
         button.disabled = false;
-
-        button.textContent = "Send Message";
 
     })
 
@@ -50,12 +52,25 @@ function sendMail(event) {
 
         console.error(error);
 
-        alert("❌ Failed to send message");
+        showToast("❌ Failed to send message");
 
         button.disabled = false;
 
-        button.textContent = "Send Message";
-
     });
+
+}
+
+
+function showToast(message){
+
+    const toast = document.getElementById("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    },3000);
 
 }
