@@ -107,6 +107,13 @@ form {
     color:red;
 }
 
+#user-message {
+    resize: none;      /* Prevent manual resizing */
+    overflow: hidden;  /* Hide scrollbar */
+    min-height: 100px; /* Initial height */
+}
+
+
 #submit-btn{
     padding: 10px 20px;
     background-color: #8a17ad;
@@ -160,7 +167,33 @@ form {
 
 }
 
+#toast{
+    position: fixed;
+    top: 30px;
+    right: 30px;
 
+    padding: 18px 28px;
+
+    border-radius: 15px;
+
+    background: #1e1f26;
+
+    box-shadow:
+        6px 6px 12px #15161b,
+       -6px -6px 12px #272833;
+
+    color: white;
+
+    opacity: 0;
+
+    transition: 0.4s;
+
+    pointer-events: none;
+}
+
+#toast.show{
+    opacity: 1;
+}
 
 
 @media (hover:hover) {
