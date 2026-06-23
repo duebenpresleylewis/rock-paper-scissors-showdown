@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 body {
@@ -107,7 +106,6 @@ body {
   margin: 0.5rem auto;
   width: 80%;
   /* overflow: hidden; */
-  /* outline: blue solid 1px; */
 }
 .main-heading-container {
   display: flex;
