@@ -24,7 +24,11 @@
     <header class="header-container">
       <h1 id="title">Minute Games</h1>
 
-      <nav class="nav-container">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-container" id="primary-navigation">
         <ul>
           <li><a href="#home-id" class="navigation-anchor">Home</a></li>
           <li><a href="../pages/contact.html" class="navigation-anchor">Contact Us</a></li>
@@ -36,7 +40,7 @@
 
     <main class="main-container">
       <div class="main-heading-container" id="home-id">
-        <h1>Rock Paper Scissors Game</h1>
+        <h1 id="game-heading">Rock Paper Scissors Game</h1>
       </div>
 
       <div class="player-move-prompt">
