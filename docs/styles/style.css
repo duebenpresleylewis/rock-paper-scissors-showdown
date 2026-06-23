@@ -157,6 +157,9 @@ body {
   min-width: fit-content;
   width: 16vw;
 }
+.action-button:active{
+  background-color: #007bff7c;
+}
 
 .reset-button {
   background-color: #03045e;
@@ -343,6 +346,8 @@ body {
         transition: color 500ms ease 100ms;
     }
 }
+
+
 
 @keyframes fadeIn {
     from {

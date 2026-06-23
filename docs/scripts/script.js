@@ -1,4 +1,4 @@
-import { showToast } from '../scripts/toast.js';
+import { showToast } from './toast.js';
 let score = JSON.parse(localStorage.getItem('score'));
 
 // First time playing the game, score will be null, so we need to initialize it
@@ -30,7 +30,6 @@ function getComputerMove() {
 
 function playGame(playerMove) {
     const computerMove = getComputerMove();
-    console.log(computerMove);
 
     let result = '';
 
