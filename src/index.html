@@ -39,17 +39,17 @@
     </header>
 
     <main class="main-container">
-      <div class="main-heading-container" id="home-id">
-        <h1 id="game-heading">Rock Paper Scissors Game</h1>
+      <div class="main-heading-container appear-animation " id="home-id">
+        <h1 id="game-heading" class="appear-animation">Rock Paper Scissors Game</h1>
       </div>
 
-      <div class="player-move-prompt">
+      <div class="player-move-prompt appear-animation ">
         <p>Choose your move:</p>
       </div>
 
       <div class="moves-container">
         <div class="rock-button">
-          <button tabindex="0" onclick="playGame('rock')" class="action-button">
+          <button tabindex="0" onclick="playGame('rock')" class="action-button appear-animation ">
             Rock
           </button>
         </div>
@@ -58,7 +58,7 @@
           <button
             tabindex="1"
             onclick="playGame('paper')"
-            class="action-button"
+            class="action-button appear-animation "
           >
             Paper
           </button>
@@ -68,7 +68,7 @@
           <button
             tabindex="2"
             onclick="playGame('scissors')"
-            class="action-button"
+            class="action-button appear-animation "
           >
             Scissors
           </button>
@@ -79,11 +79,11 @@
         <p class="js-result-display"></p>
         <p class="moves"></p>
 
-        <p class="js-score"></p>
+        <p class="js-score appear-animation "></p>
       </div>
 
       <div class="reset-button-container">
-        <button class="reset-button" tabindex="3" onclick="resetScore()" >
+        <button class="reset-button appear-animation " tabindex="3" onclick="resetScore()" >
           Reset Score
         </button>
       </div>
@@ -91,7 +91,7 @@
       <div id="toast-container"></div>
     </main>
 
-    <script src="script.js"  type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"  type="module"></script>
   </body>
-</html>
+  </html>
