@@ -89,6 +89,8 @@ function resetScore() {
 
     localStorage.removeItem('score');
 
+    document.querySelector('.js-result-display').innerHTML = "";
+    document.querySelector('.moves').innerHTML ="";
     
     updateScoreElement();   
     

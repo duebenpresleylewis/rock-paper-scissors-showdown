@@ -170,11 +170,10 @@ body{
     .reset-button:hover{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         transform: translateY(-0.4rem);
-        border-bottom: 5px solid white;
+        border-bottom: 8px solid white;
     }
     .reset-button:active{
-        background-color: #595a88;
-        border-bottom: 5px solid black;
+        border:none;
     }
 }
 
