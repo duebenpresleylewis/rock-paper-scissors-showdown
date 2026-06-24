@@ -54,6 +54,8 @@ function playGame(playerMove) {
         if (consecutiveWins >= 3) {
             // notify audio system to play combo sound
             window.dispatchEvent(new CustomEvent('combo'));
+
+            
             // reset so user needs 3 more consecutive wins to trigger again
             consecutiveWins = 0;
         }
