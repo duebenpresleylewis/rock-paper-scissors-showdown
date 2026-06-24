@@ -59,6 +59,9 @@
           <li><a href="#home-id" class="navigation-anchor">Home</a></li>
           <li><a href="./pages/contact.html" class="navigation-anchor">Contact Us</a></li>
           <li><a href="./pages/about.html" class="navigation-anchor">About Us</a></li>
+          
+          <li><a id="music-btn">🔇</a></li>
+          
         </ul>
       </nav>
 
@@ -117,7 +120,31 @@
       <div id="toast-container"></div>
     </main>
 
+    <!-- Audio Elements -->
+    <audio id="bg-music" loop>
+    <source src="./Assets/audio/bgMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="click-sound">
+        <source src="./Assets/audio/buttonSound.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="win-sound">
+        <source src="./Assets/audio/winSound.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="lose-sound">
+        <source src="./Assets/audio/loseSound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tie-sound">
+        <source src="./Assets/audio/tieSound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="combo-sound">
+        <source src="./Assets/audio/comboMusic.mp3" type="audio/mpeg">
+    </audio>
+    
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="./scripts/music.js" type="module"></script>
     <script src="./scripts/script.js"  type="module"></script>
   </body>
   </html>
