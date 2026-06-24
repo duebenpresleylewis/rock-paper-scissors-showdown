@@ -22,5 +22,3 @@ export function showToast(message, type = 'success', duration = 3000) {
     });
   }, duration);
 }
-
-    

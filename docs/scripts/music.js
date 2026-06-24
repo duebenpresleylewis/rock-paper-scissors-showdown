@@ -7,6 +7,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const winSound = document.getElementById('win-sound');
     const loseSound = document.getElementById('lose-sound');
     const comboSound = document.getElementById('combo-sound');
+    
+    winSound.volume = 0.7;
+    loseSound.volume = 0.7;
+    tieSound.volume = 0.7;
+
     if (bgMusic) bgMusic.volume = 0.1;
     
     if (musicBtn) {
@@ -62,7 +67,17 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('combo', () => {
         if (comboSound) {
             comboSound.currentTime = 0;
+            winSound.volume = 0.2;
             comboSound.play();
+            winSound.volume = 0.8;
+
+            const combo = document.getElementById('combo-popup');
+            combo.textContent = 'LEGENDARY! 👑';
+            combo.classList.add('combo-toast');
+
+              setTimeout(() => {
+                combo.classList.add('hide');
+            }, 3000);
         }
     });
 

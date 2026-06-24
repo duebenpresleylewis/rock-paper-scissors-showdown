@@ -49,10 +49,18 @@ Or use any static server you prefer (Live Server, `http-server`, etc.).
 ### 🎵 Audio & Sound Effects
 All audio tracks and sound effects used in this game are licensed under the [Pixabay Content License](https://pixabay.com/service/license/) (Free for commercial use, no attribution required, but highly appreciated).
 
-*   **Rock Selection Sound** – [Sound Effect Title](URL_LINK_TO_ASSET) by [Creator Name](URL_LINK_TO_CREATOR_PROFILE)
-*   **Paper Selection Sound** – [Sound Effect Title](URL_LINK_TO_ASSET) by [Creator Name](URL_LINK_TO_CREATOR_PROFILE)
-*   **Scissors Selection Sound** – [Sound Effect Title](URL_LINK_TO_ASSET) by [Creator Name](URL_LINK_TO_CREATOR_PROFILE)
-*   **Background Music (Main Menu)** – "[Track Title](URL_LINK_TO_ASSET)" by [Artist Name](URL_LINK_TO_CREATOR_PROFILE)
+*   **Button Sound** – [Sound Effect Title](https://pixabay.com/sound-effects/film-special-effects-classic-game-action-negative-6-224416/) by [floraphonic]
+
+*   **Win Sound** – [Winner game sound.](https://pixabay.com/sound-effects/film-special-effects-winner-game-sound-404167/) by [PuyoPuyoMegaFan1234]
+
+*   **Lose Sound** – [
+Classic Game Action Negative 6](URL_LINK_TO_ASSET) by [floraphonic]
+
+*   **Tie Sound** – [Classic Game Action Negative 7](https://pixabay.com/sound-effects/film-special-effects-classic-game-action-negative-7-224415/) by [floraphonic]
+
+*   **Combo Sound** – [RPG Sword Attack Combo 13](https://pixabay.com/sound-effects/film-special-effects-rpg-sword-attack-combo-13-388926/) by [freesound_gamestudio]
+
+*   **Background Music (Main Menu)** – "[https://pixabay.com/music/funk-fun-fun-pop-music-503363/](URL_LINK_TO_ASSET)" by [GR0ZA]
 
 
 
