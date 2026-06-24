@@ -27,11 +27,12 @@ function getComputerMove() {
 
     return computerChoice;
 }
+export let result = '';
+let consecutiveWins = 0;
 
 function playGame(playerMove) {
     const computerMove = getComputerMove();
 
-    let result = '';
 
     if(playerMove === computerMove) {
         result = 'Tie!!';
@@ -45,14 +46,23 @@ function playGame(playerMove) {
         result = 'Computer Wins!!';
     }
 
-    // Update the score
+    // Update the score and track consecutive wins for combo sound
     if(result === 'You Win!!') {
         score.playerWins++;
         fireConfetti();   // confetti will be fired
+        consecutiveWins++;
+        if (consecutiveWins >= 3) {
+            // notify audio system to play combo sound
+            window.dispatchEvent(new CustomEvent('combo'));
+            // reset so user needs 3 more consecutive wins to trigger again
+            consecutiveWins = 0;
+        }
     } else if(result === 'Computer Wins!!') {
         score.playerLosses++;
+        consecutiveWins = 0;
     } else {
         score.playerTies++;
+        consecutiveWins = 0;
     }
 
 
@@ -75,6 +85,9 @@ function playGame(playerMove) {
     `;
 
     updateScoreElement();
+
+    // notify audio system about the latest result so music.js can play appropriate sound
+    window.dispatchEvent(new CustomEvent('gameResult', { detail: result }));
 }
 
 function updateScoreElement() {

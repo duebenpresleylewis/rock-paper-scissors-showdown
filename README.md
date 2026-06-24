@@ -44,6 +44,18 @@ Or use any static server you prefer (Live Server, `http-server`, etc.).
 - Prefer replacing inline `onclick` handlers with `addEventListener` calls inside `script.js` for cleaner modular code.
 - When changing modules or imports, serve files over HTTP to avoid CORS/module loading issues.
 
+## 🛠️ Built With & Credits
+
+### 🎵 Audio & Sound Effects
+All audio tracks and sound effects used in this game are licensed under the [Pixabay Content License](https://pixabay.com/service/license/) (Free for commercial use, no attribution required, but highly appreciated).
+
+*   **Rock Selection Sound** – [Sound Effect Title](URL_LINK_TO_ASSET) by [Creator Name](URL_LINK_TO_CREATOR_PROFILE)
+*   **Paper Selection Sound** – [Sound Effect Title](URL_LINK_TO_ASSET) by [Creator Name](URL_LINK_TO_CREATOR_PROFILE)
+*   **Scissors Selection Sound** – [Sound Effect Title](URL_LINK_TO_ASSET) by [Creator Name](URL_LINK_TO_CREATOR_PROFILE)
+*   **Background Music (Main Menu)** – "[Track Title](URL_LINK_TO_ASSET)" by [Artist Name](URL_LINK_TO_CREATOR_PROFILE)
+
+
+
 ## Contributing
 
 Feel free to open issues or submit PRs. Keep changes small and focused.
